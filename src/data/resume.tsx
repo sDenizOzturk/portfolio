@@ -1,70 +1,66 @@
 import { Icons } from "@/components/icons";
+import { image } from "framer-motion/client";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { features } from "process";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  name: "Serhat Deniz Öztürk",
+  preferedName: "Deniz",
+  initials: "DO",
+  url: "https://serhatdenizozturk.com.tr",
+  location: "Antalya, Turkey",
+  locationLink: "https://www.google.com/maps/place/Antalya,+Turkey",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
-  summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I am a Software Developer skilled in building web, desktop, mobile, and embedded applications with a focus on scalable and efficient solutions.",
+  summary: [
+    "Experienced software developer and entrepreneur with a Bachelor’s degree in Computer Engineering. Over the years, I have independently conceived, designed, and launched a wide range of software solutions spanning web, mobile, desktop, and embedded platforms. My work reflects a strong commitment to innovation, precision, and user-focused design.",
+    "As a published author in software development methodologies, I have contributed to advancing industry standards and best practices. I am skilled in leveraging modern technologies like React.js, Vue.js, Node.js, TypeScript, and Qt/C++ to create scalable, efficient, and user-friendly software.",
+    "I am passionate about solving complex technical challenges, learning emerging tools and methodologies, and delivering high-quality software. My dedication lies in continuous improvement, whether working independently or collaborating in dynamic team environments.",
+  ],
   avatarUrl: "/me.png",
   skills: [
-    "React",
-    "Next.js",
-    "Typescript",
+    "React.js",
+    "Vue.js",
     "Node.js",
-    "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
-    "Java",
+    "Express.js",
+    "TypeScript",
+    "JavaScript",
+    "Qt",
     "C++",
+    "Linux",
+    "MySQL",
+    "MongoDB",
+    "SQLite",
+    "Raspberry Pi",
+    "ESP32",
+    "ESP8266",
+    "Git",
+    "cPanel",
+    "Vite",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    //{ href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "serhatdenizozturk@hotmail.com",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/sDenizOzturk",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://linkedin.com/in/serhat-deniz-öztürk",
         icon: Icons.linkedin,
-
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
-
-        navbar: true,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:serhatdenizozturk@hotmail.com",
         icon: Icons.email,
-
         navbar: false,
       },
     },
@@ -72,617 +68,520 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "BINAK Software & Information Systems",
+      href: "https://binak.com.tr",
+      badges: [],
+      location: "Antalya, Turkey",
+      title: "Founder & Software Developer",
+      logoUrl: "/work-experience/binak-logo.png",
+      start: "2018",
+      end: "Present",
+      details: [
+        "Designed, built, and launched a diverse range of products from scratch as a solo developer, without hiring additional employees.",
+        "Created full-stack applications with React.js, Vue.js, Node.js, MySQL, MongoDB, and TypeScript, addressing diverse user needs.",
+        "Developed desktop and mobile apps using Qt/C++ with optimized performance and usability.",
+        "Designed and implemented hardware solutions using Raspberry Pi, ESP boards, and custom device parts produced with 3D printers and mini CNC routers.",
+        "Managed all aspects of product development, including architecture, coding, testing, and deployment, ensuring high-quality results.",
+      ],
+    },
+    {
+      company: "Maren Robotics (formerly Desistek Robotik Ltd. Şti)",
+      href: "https://marenrobotics.com",
       badges: [],
       location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
-      description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+      title: "Freelance Qt/QML C++ Developer",
+      logoUrl: "/work-experience/marenrobotics-logo.jpeg",
+      start: "2020",
+      end: "2021",
+      details: [
+        "Updated the control software for remotely operated underwater vehicles (ROVs) using Qt/QML and C++.",
+        "Enhanced the user interface by removing unnecessary widgets and adding new features like multi-camera support.",
+        "Redesigned the UI to meet specifications from the UI/UX designer, improving usability and aesthetics.",
+      ],
     },
     {
-      company: "Shopify",
+      company: "EnPro Technologies",
+      href: "https://enpro.co",
       badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
-      description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+      location: "Hybrid",
+      title: "Freelance Full Stack Developer",
+      logoUrl: "/work-experience/enpro-logo.png",
+      start: "2021",
+      end: "2023",
+      details: [
+        "Assisted as an additional developer for web and software projects on a freelance basis.",
+        "Contributed to the ATSO website project using Vue.js & TailwindCSS.",
+        "Provided support for freelance outsourced projects using React.js, Node.js, Express.js, and MongoDB.",
+      ],
     },
     {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
+      company: "SPERO 3D",
+      href: "spero3d.com",
       badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
-      description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    },
-    {
-      company: "Splunk",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+      location: "Hybrid",
+      title: "Freelance Frontend Developer",
+      logoUrl: "/work-experience/spero-logo.png",
+      start: "2023",
+      end: "2024",
+      details: [
+        "Assisted as an additional developer for web and software projects on a freelance basis.",
+        "Contributed to the ATSO website project using Vue.js & TailwindCSS.",
+        "Provided support for freelance outsourced projects using React.js, Node.js, Express.js, and MongoDB.",
+      ],
     },
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
-    },
-    {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
+      school: "Izmir University of Economics",
+      href: "https://www.ieu.edu.tr",
+      degree: "Computer Engineering, BSc (Full Scholarship)",
+      logoUrl: "/education/ieu-logo.png",
+      start: "2013",
+      end: "2018",
     },
   ],
+
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "bKapı -site",
+      href: "https://binak.com.tr/urunler/bkapi-site",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Automatic Number Plate Recognition (ANPR) system for managing gate access in building complexes.",
+      features: [
+        "Automated license plate recognition using IP cameras.",
+        "Real-time gate access for registered vehicles.",
+        "Image logging for each vehicle passage.",
+        "Messaging alerts via Telegram and SMS.",
+        "Administrator notifications for unauthorized vehicles.",
+        "Integrated TTS technology for vehicle information announcements.",
+        "Compact design utilizing 3D printed parts.",
+        "Mobile and web app integration for enhanced accessibility.",
+      ],
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Qt",
+        "C++",
+        "Raspberry Pi 4/5",
+        "MySQL",
+        "ESP01",
+        "3D Printing",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
+          type: "Product Page",
+          href: "https://binak.com.tr/urunler/bkapi-site",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      image: "/product/bkapi-site.jpeg",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "bKapı -remote",
+      href: "https://github.com/sDenizOzturk/bKapi-remote",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Remote management web app allowing building managers to let residents self-register car plates and application keys.",
+      features: [
+        "Self-service registration for residents.",
+        "Time-sensitive URLs for plate and key management.",
+        "Detailed pass logs with photo records.",
+        "Search functionality by name or license plate.",
+        "Backend deployed on Raspberry Pi, with gateway API and frontend on cPanel.",
+        "For the demo server, enter any password to log in.",
+      ],
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "MySQL",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          type: "GitHub Repo",
+          href: "https://github.com/sDenizOzturk/bKapi-remote",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Demo",
+          href: "https://bkapi.com.tr/test/auth",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/product/bkapi-remote.jpeg",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
+      title: "bOkul",
+      href: "https://binak.com.tr/urunler/bokul",
+      active: false,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Student Pick-Up System providing role-based access for student affairs, teachers, and guardians with advanced security features.",
+      features: [
+        "Role-based access system.",
+        "Pre-arrival notifications for student pickups.",
+        "Efficient image handling with optimized backend algorithms.",
+      ],
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "Vue.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "IndexedDB",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
+          type: "Product Page",
+          href: "https://binak.com.tr/urunler/bokul",
           icon: <Icons.globe className="size-3" />,
         },
+      ],
+      image: "/product/bokul.webp",
+    },
+    {
+      title: "karsiligine.com",
+      href: "https://karsiligine.com",
+      active: true,
+      description:
+        "Alternative TL inflation calculation tool through USD-TL rates and official USD inflation.",
+      features: [
+        "Publicly available repository on GitHub.",
+        "Deployed on cPanel for accessibility.",
+      ],
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "Zustand",
+        "Framer Motion",
+      ],
+      links: [
         {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          type: "Frontend GitHub Repo",
+          href: "https://github.com/sDenizOzturk/karsiligine-com",
           icon: <Icons.github className="size-3" />,
         },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
+        {
+          type: "Backend Repo",
+          href: "https://github.com/sDenizOzturk/karsiligine-api",
+          icon: <Icons.github className="size-3" />,
+        },
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://karsiligine.com",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/product/karsiligine.png",
+    },
+    {
+      title: "binak.com.tr",
+      href: "https://binak.com.tr",
+      active: true,
+      description:
+        "Official company website for showcasing services and products of Binak.",
+      features: ["Hosted on cPanel with public repository on GitHub"],
+      technologies: ["Vue.js", "Options API", "JavaScript", "CSS"],
+      links: [
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/sDenizOzturk/binakybs-com",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://binak.com.tr",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/binakcomtr.jpeg",
+    },
+    {
+      title: "kdvhesaplayici.com.tr",
+      href: "https://kdvhesaplayici.com.tr",
+      active: true,
+      description:
+        "Innovative VAT calculation tool emphasizing real-time interaction and user experience.",
+      features: ["Hosted on cPanel with public repository on GitHub"],
+      technologies: ["Vue.js", "Options API", "JavaScript", "CSS"],
+      links: [
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/sDenizOzturk/binakybs-com",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://kdvhesaplayici.com.tr",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/kdvhesaplayicicomtr.png",
+    },
+    {
+      title: "Binak React Components",
+      href: "https://sdenizozturk.github.io/binak-react-components/",
+      active: true,
+      description: "React UI component library for Binak products.",
+      features: ["Public repository on GitHub and npm."],
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Vite",
+        "React Hook Form",
+        "Framer Motion",
+      ],
+      links: [
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/sDenizOzturk/binak-react-components",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Documentation",
+          href: "https://sdenizozturk.github.io/binak-react-components/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/binak-react-components.png",
+    },
+    {
+      title: "React Image Displayer",
+      href: "https://github.com/sDenizOzturk/react-image-displayer/",
+      active: true,
+      description:
+        "Image loader React component that mounts the image only after it is successfully loaded.",
+      features: ["Public repository on GitHub and npm."],
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Vite",
+        "React Hook Form",
+        "Framer Motion",
+      ],
+      links: [
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/sDenizOzturk/react-image-displayer/",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Documentation",
+          href: "https://sdenizozturk.github.io/react-image-displayer/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/react-image-displayer.png",
+    },
+    {
+      title: "bKapı -site mobil & bKapı -multi",
+      href: "https://binak.com.tr/mobil-uygulamalar",
+      active: true,
+      description:
+        "Remote access mobile applications for managing building entrances, exits, and pedestrian gates.",
+      features: [
+        "Remote gate operation via mobile devices.",
+        "Multi-building complex access management.",
+        "Published on Google Play Store and Apple App Store.",
+      ],
+      technologies: ["Qt", "C++", "Google Play Console", "App Store Connect"],
+      links: [
+        {
+          type: "App Store - site mobil",
+          href: "https://apps.apple.com/tr/app/bkapi-site-mobil/id1576908443",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "App Store - multi",
+          href: "https://apps.apple.com/tr/app/bkapi-multi/id6444596145",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Google Play - site mobil",
+          href: "https://play.google.com/store/apps/details?id=binak.bKapi.site",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Google Play - multi",
+          href: "https://play.google.com/store/apps/details?id=binak.bKapi.multi",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/bkapi-site-mobil.webp",
+    },
+    {
+      title: "bDiafon & bKapı -GSM",
+      href: "https://binak.com.tr/urunler/bdiafon",
+      active: true,
+      description:
+        "GSM-based intercom and gate opener system with extensive functionality for multiple gates.",
+      features: [
+        "GSM call and dial-pad operation for gate opening.",
+        "Two-way voice communication and remote access via WIFI.",
+        "Extensive call and access log management.",
+      ],
+      technologies: [
+        "C++",
+        "ESP32",
+        "SIM800/SIM808",
+        "ESPAsyncWebServer",
+        "HTML",
+        "CSS",
+        "SPIFFS",
+        "3D Printing",
+      ],
+      links: [
+        {
+          type: "Product Page - bDiafon",
+          href: "https://binak.com.tr/urunler/bdiafon",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Product Page - bKapi -GSM",
+          href: "https://binak.com.tr/urunler/bkapi-gsm",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/bdiafon.webp",
+    },
+    {
+      title: "bAdım",
+      href: "https://binak.com.tr/urunler/badim",
+      active: true,
+      description:
+        "Intelligent lighting system for staircases featuring advanced sensor-based control.",
+      features: [
+        "Genuine step-tracking functionality.",
+        "Wireless sensor communication and user-configurable settings.",
+      ],
+      technologies: [
+        "C++",
+        "ESP32",
+        "SPIFFS",
+        "ESPAsyncWebServer",
+        "HTML",
+        "CSS",
+        "3D Printing",
+      ],
+      links: [
+        {
+          type: "Product Page",
+          href: "https://binak.com.tr/urunler/badim",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/badim.webp",
+    },
+    {
+      title: "bPersonel",
+      href: "https://binak.com.tr/urunler/bpersonel",
+      active: true,
+      description:
+        "Personnel tracking and attendance management system with RFID and biometric authentication.",
+      features: [
+        "Real-time tracking with RFID and biometric authentication.",
+        "Automated work hours and shift management.",
+        "Customizable reporting and payroll integration.",
+      ],
+      technologies: [
+        "Qt",
+        "C++",
+        "Python",
+        "Raspberry Pi",
+        "MySQL",
+        "RFID",
+        "Biometric Authentication",
+      ],
+      links: [
+        {
+          type: "Product Page",
+          href: "https://binak.com.tr/urunler/bpersonel",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/bpersonel.webp",
+    },
+    {
+      title: "bKDV & bKarşıt & bGümrük",
+      href: "https://binak.com.tr/masaustu-uygulamalar",
+      active: true,
+      description:
+        "Suite of desktop applications simplifying auditing tasks with robust data management capabilities.",
+      features: [
+        "Streamlined audit workflows with autocomplete and reusable data.",
+        "Support for parsing and generating various document formats.",
+        "AES 256 encryption for secure data storage.",
+      ],
+      technologies: ["Qt", "C++", "SQLITE"],
+      links: [
+        {
+          type: "Product Pages",
+          href: "https://binak.com.tr/masaustu-uygulamalar",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/bkarsit.webp",
+    },
+    {
+      title: "bResetleme & bRöle",
+      href: "",
+      active: true,
+      description:
+        "WIFI-controlled devices for power management and external relay control.",
+      features: [
+        "Triggered by web interface, HTTP request, or TCP packet.",
+        "Can be configured via UI interface by connecting to the device in Access Point mode.",
+      ],
+      technologies: [
+        "C++",
+        "ESP32",
+        "SPIFFS",
+        "ESPAsyncWebServer",
+        "HTML",
+        "CSS",
+        "3D Printing",
+      ],
+      links: [],
+      image: "/product/bresetleme.png",
     },
   ],
-  hackathons: [
+
+  publications: [
     {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
-      description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      dates: "March 23rd - 24th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
-      icon: "public",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
-      links: [],
-    },
-    {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
+      title: "Uygulamalar ile Qt",
+      dates: "Aug 31, 2018",
+      publisher: "Kodlab Yayin Dagitim",
+      description: "A published book that teaches Qt for beginners.",
+      isbn: "978-6-05-211823-8",
+      image: "/publication/uygulamalar-ile-qt.jpg",
       links: [
         {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          title: "Official Publisher Page",
+          icon: <Icons.bookstore className="h-4 w-4" />,
+          href: "https://www.kodlab.com/programlama/81-qt-programlama-9786052118238.html",
+        },
+        {
+          title: "Available on Hepsiburada",
+          icon: <Icons.shoppingCart className="h-4 w-4" />,
+          href: "https://www.hepsiburada.com/kodlab-yayinlari-uygulamalar-ile-qt-pm-HB00000DQ82E",
         },
       ],
     },
     {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
+      title: "A Shuttle Route Divergence Detection System",
+      dates: "Oct 17, 2020",
+      publisher:
+        "ASYU2020 / 2020 Innovations In Intelligent Systems And Applications Conference",
       description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
+        "A paper on an M2M information system that was published in IEEE.",
+      isbn: "978-1-7281-9136-2",
+      image: "/publication/2020-asyu.png",
       links: [
         {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
-        },
-        {
-          title: "ML",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
-        },
-      ],
-    },
-    {
-      title: "ETH Waterloo",
-      dates: "October 13th - 15th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a blockchain application for doctors and pharmacists to perform trustless transactions and prevent overdosage in patients.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
-      links: [
-        {
-          title: "Organization",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ethdocnet",
-        },
-      ],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 15th - 17th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a virtual reality application allowing users to see themselves in third person.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Streamer Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/htn2017",
-        },
-        {
-          title: "Client Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/RTSPClient",
-        },
-      ],
-    },
-    {
-      title: "Hack The 6ix",
-      dates: "August 26th - 27th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed an open platform for people shipping items to same place to combine shipping costs and save money.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-6ix.jpg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ShareShip/ShareShip",
-        },
-        {
-          title: "Site",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://share-ship.herokuapp.com/",
-        },
-      ],
-    },
-    {
-      title: "Stupid Hack Toronto",
-      dates: "July 23rd, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a chrome extension which tracks which facebook profiles you have visited and immediately texts your girlfriend if you visited another girls page.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/stupid-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/nsagirlfriend/nsagirlfriend",
-        },
-      ],
-    },
-    {
-      title: "Global AI Hackathon - Toronto",
-      dates: "June 23rd - 25th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a python library which can be imported to any python game and change difficulty of the game based on real time emotion of player. Uses OpenCV and webcam for facial recognition, and a custom Machine Learning Model trained on a [Kaggle Emotion Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/leaderboard) using [Tensorflow](https://www.tensorflow.org/Tensorflow) and [Keras](https://keras.io/). This project recieved 1st place prize at the Global AI Hackathon - Toronto and was also invited to demo at [NextAI Canada](https://www.nextcanada.com/next-ai).",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/global-ai-hackathon.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://syncedreview.com/2017/06/26/global-ai-hackathon-in-toronto/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/TinySamosas/",
-        },
-      ],
-    },
-    {
-      title: "McGill AI for Social Innovation Hackathon",
-      dates: "June 17th - 18th, 2017",
-      location: "Montreal, Quebec",
-      description:
-        "Developed realtime facial microexpression analyzer using AI",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/ai-for-social-good.jpg",
-      links: [],
-    },
-    {
-      title: "Open Source Circular Economy Days Hackathon",
-      dates: "June 10th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a custom admin interface for food waste startup <a href='http://genecis.co/'>Genecis</a> to manage their data and provide analytics.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/genecis",
-        },
-      ],
-    },
-    {
-      title: "Make School's Student App Competition 2017",
-      dates: "May 19th - 21st, 2017",
-      location: "International",
-      description: "Improved PocketDoc and submitted to online competition",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
-      win: "Top 10 Finalist | Honourable Mention",
-      links: [
-        {
-          title: "Medium Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://medium.com/make-school/the-winners-of-make-schools-student-app-competition-2017-a6b0e72f190a",
-        },
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
-        },
-      ],
-    },
-    {
-      title: "HackMining",
-      dates: "May 12th - 14th, 2017",
-      location: "Toronto, Ontario",
-      description: "Developed neural network to optimize a mining process",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
-      links: [],
-    },
-    {
-      title: "Waterloo Equithon",
-      dates: "May 5th - 7th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
-        },
-      ],
-    },
-    {
-      title: "SpaceApps Waterloo",
-      dates: "April 28th - 30th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/earthwatch",
-        },
-      ],
-    },
-    {
-      title: "MHacks 9",
-      dates: "March 24th - 26th, 2017",
-      location: "Ann Arbor, Michigan",
-      description:
-        "Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/threejs-planes",
-        },
-      ],
-    },
-    {
-      title: "StartHacks I",
-      dates: "March 4th - 5th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed at StartHacks 2017, Recipic is a mobile app which allows you to take pictures of ingredients around your house, and it will recognize those ingredients using ClarifAI image recognition API and return possible recipes to make. Recipic recieved 1st place at the hackathon for best pitch and hack.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
-      win: "1st Place Winner",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-ionic",
-        },
-        {
-          title: "Source (Server)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-rails",
-        },
-      ],
-    },
-    {
-      title: "QHacks II",
-      dates: "February 3rd - 5th, 2017",
-      location: "Kingston, Ontario",
-      description:
-        "Developed a mobile game which enables city-wide manhunt with random lobbies",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/human-huntr-react-native",
-        },
-        {
-          title: "Source (API)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/human-huntr-rails",
-        },
-      ],
-    },
-    {
-      title: "Terrible Hacks V",
-      dates: "November 26th, 2016",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mock of Windows 11 with interesting notifications and functionality",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
-        },
-      ],
-    },
-    {
-      title: "Portal Hackathon",
-      dates: "October 29, 2016",
-      location: "Kingston, Ontario",
-      description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
+          title: "View on IEEE Xplore",
+          icon: <Icons.researchPaper className="h-4 w-4" />,
+          href: "https://ieeexplore.ieee.org/document/9259829",
         },
       ],
     },

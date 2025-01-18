@@ -6,7 +6,8 @@ interface Props {
   title: string;
   description: string;
   dates: string;
-  location: string;
+  publisher: string;
+  isbn?: string;
   image?: string;
   links?: readonly {
     icon: React.ReactNode;
@@ -15,11 +16,12 @@ interface Props {
   }[];
 }
 
-export function HackathonCard({
+export function PublicationCard({
   title,
   description,
   dates,
-  location,
+  publisher,
+  isbn,
   image,
   links,
 }: Props) {
@@ -35,20 +37,25 @@ export function HackathonCard({
         {dates && (
           <time className="text-xs text-muted-foreground">{dates}</time>
         )}
+
         <h2 className="font-semibold leading-none">{title}</h2>
-        {location && (
-          <p className="text-sm text-muted-foreground">{location}</p>
+
+        {publisher && (
+          <p className="text-sm text-muted-foreground">{publisher}</p>
         )}
         {description && (
           <span className="prose dark:prose-invert text-sm text-muted-foreground">
             {description}
           </span>
         )}
+        {isbn && (
+          <span className="text-xs text-muted-foreground">ISBN: {isbn}</span>
+        )}
       </div>
       {links && links.length > 0 && (
         <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
           {links?.map((link, idx) => (
-            <Link href={link.href} key={idx}>
+            <Link href={link.href} key={idx} target="_blank">
               <Badge key={idx} title={link.title} className="flex gap-2">
                 {link.icon}
                 {link.title}

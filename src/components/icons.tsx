@@ -220,4 +220,37 @@ export const Icons = {
       />
     </svg>
   ),
+  shoppingCart: (props: IconProps) => (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>Shopping Cart</title>
+      <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM7.16 14h9.67c.78 0 1.48-.45 1.79-1.12l3.58-7.84A1 1 0 0 0 21 4H5.21L4.27 2H1v2h2l3.6 7.59L5.25 12.41c-.41.36-.67.87-.67 1.42 0 1.1.9 2 2 2h11v-2H7.16l1.1-2h7.45a1 1 0 0 0 .92-.61l2.73-6a1 1 0 0 0-.92-1.39H6.21l-.94-2H1v2h2l3.6 7.59L7.16 14z" />
+    </svg>
+  ),
+  bookstore: (props: IconProps) => (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>Bookstore</title>
+      <path d="M3 3v18a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V3h-2v16H5V3H3zm3 0v14h12V3H6zm7 5h3V6h-3v2zm-5 2h3V8H8v2zm5 2h3v-2h-3v2zm-5 2h3v-2H8v2zm0-6h3V6H8v2z" />
+    </svg>
+  ),
+  researchPaper: (props: IconProps) => (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <title>Research Paper</title>
+      <path d="M6 2v20h12V2H6zm10 18H8V4h8v16zM9 6h6v2H9V6zm0 4h6v2H9v-2zm0 4h6v2H9v-2z" />
+    </svg>
+  ),
 };

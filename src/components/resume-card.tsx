@@ -17,7 +17,7 @@ interface ResumeCardProps {
   href?: string;
   badges?: readonly string[];
   period: string;
-  description?: string;
+  details?: readonly string[];
 }
 export const ResumeCard = ({
   logoUrl,
@@ -27,12 +27,12 @@ export const ResumeCard = ({
   href,
   badges,
   period,
-  description,
+  details,
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (description) {
+    if (details?.length) {
       e.preventDefault();
       setIsExpanded(!isExpanded);
     }
@@ -86,22 +86,23 @@ export const ResumeCard = ({
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
-          {description && (
-            <motion.div
+          {details && (
+            <motion.ul
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className=" text-xs sm:text-sm list-disc pl-4"
             >
-              {description}
-            </motion.div>
+              {details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+              ))}
+            </motion.ul>
           )}
         </div>
       </Card>
