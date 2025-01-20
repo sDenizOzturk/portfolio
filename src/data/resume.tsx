@@ -225,6 +225,7 @@ export const DATA = {
         "Vue.js",
         "Node.js",
         "Express.js",
+        "JavaScript",
         "MongoDB",
         "Mongoose",
         "IndexedDB",
@@ -331,6 +332,7 @@ export const DATA = {
         "Vite",
         "React Hook Form",
         "Framer Motion",
+        "CSS",
       ],
       links: [
         {
@@ -359,6 +361,7 @@ export const DATA = {
         "Vite",
         "React Hook Form",
         "Framer Motion",
+        "CSS",
       ],
       links: [
         {

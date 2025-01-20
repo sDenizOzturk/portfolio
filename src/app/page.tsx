@@ -1,3 +1,5 @@
+"use client";
+
 import { PublicationCard } from "@/components/publication-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -8,10 +10,39 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { useMemo, useState } from "react";
+import { Filter } from "@/components/ui/filter";
 
 const BLUR_FADE_DELAY = 0.04;
 
+const projectFilters = [
+  "All",
+  "React.js",
+  "Vue.js",
+  "Node.js",
+  "Qt",
+  "C++",
+  "JavaScript",
+  "TypeScript",
+  "CSS",
+] as const;
+type ProjectFilter = (typeof projectFilters)[number];
+
 export default function Page() {
+  const [projectFilter, setProjectFilter] = useState<ProjectFilter>("All");
+
+  const filteredProjects = useMemo(() => {
+    if (projectFilter === "All") {
+      return DATA.projects;
+    }
+    return DATA.projects.filter((project) => {
+      return (
+        Array.isArray(project.technologies) &&
+        project.technologies.includes(projectFilter)
+      );
+    });
+  }, [projectFilter]);
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -135,10 +166,31 @@ export default function Page() {
                   handle everything from design to development and deployment.
                 </p>
               </div>
+
+              <div className="flex min-h-0 flex-col gap-y-3">
+                <div className="flex flex-wrap gap-1">
+                  {projectFilters.map((skill, id) => (
+                    <BlurFade
+                      key={skill}
+                      delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                    >
+                      <Filter
+                        filter={skill}
+                        setFilter={setProjectFilter}
+                        currentFilter={projectFilter}
+                        key={skill}
+                      />
+                    </BlurFade>
+                  ))}
+                </div>
+              </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
+          <div
+            key={projectFilter}
+            className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto"
+          >
+            {filteredProjects.map((project, id) => (
               <BlurFade
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
