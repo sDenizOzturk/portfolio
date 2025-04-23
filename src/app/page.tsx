@@ -138,9 +138,7 @@ export default function Page() {
           {DATA.skills.map((skillCategory, id) => (
             <>
               <BlurFade delay={BLUR_FADE_DELAY * 9}>
-                <h2 className="text-xl font-bold">
-                  {skillCategory.title} Skills
-                </h2>
+                <h2 className="text-xl font-bold">{skillCategory.title}</h2>
               </BlurFade>
 
               <div className="flex flex-wrap gap-1">

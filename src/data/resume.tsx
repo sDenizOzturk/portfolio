@@ -71,6 +71,10 @@ export const DATA = {
       ],
     },
     {
+      title: "Operating Systems",
+      items: ["Windows", "MacOS", "Linux Mint", "Raspberry Pi OS"],
+    },
+    {
       title: "Common & Other",
       items: [
         "Git",
@@ -82,12 +86,10 @@ export const DATA = {
         "TCP/IP",
         "WebSockets",
         "HTTP/S",
-        "Linux Mint",
-        "Raspberry Pi OS",
-        "Windows",
+        "GStreamer",
         "3D Printing",
-        "CR6-SE",
-        "CR6-MAX",
+        "CR-6 SE",
+        "CR-6 MAX",
         "Tinkercad",
         "Cura",
         "Mini CNC Routing",
@@ -440,7 +442,13 @@ export const DATA = {
         "Multi-building complex access management.",
         "Published on Google Play Store and Apple App Store.",
       ],
-      technologies: ["Qt", "C++", "Google Play Console", "App Store Connect"],
+      technologies: [
+        "Qt",
+        "C++",
+        "GStreamer",
+        "Google Play Console",
+        "App Store Connect",
+      ],
       links: [
         {
           type: "App Store - site mobil",
