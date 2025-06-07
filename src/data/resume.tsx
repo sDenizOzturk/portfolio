@@ -1,7 +1,5 @@
 import { Icons } from "@/components/icons";
-import { image } from "framer-motion/client";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { features } from "process";
 
 export const DATA = {
   name: "Serhat Deniz Öztürk",
@@ -130,7 +128,7 @@ export const DATA = {
       badges: [],
       location: "Antalya, Turkey",
       title: "Software Developer & Founder",
-      logoUrl: "/work-experience/binak-logo.png",
+      logoUrl: "/work-experience/binak-logo.webp",
       start: "2018",
       end: "Present",
       details: [
@@ -147,7 +145,7 @@ export const DATA = {
       badges: [],
       location: "Hybrid",
       title: "Frontend Developer",
-      logoUrl: "/work-experience/spero-logo.png",
+      logoUrl: "/work-experience/spero-logo.webp",
       start: "2023",
       end: "2024",
       details: [
@@ -160,7 +158,7 @@ export const DATA = {
       badges: [],
       location: "Hybrid",
       title: "Full Stack Developer",
-      logoUrl: "/work-experience/enpro-logo.png",
+      logoUrl: "/work-experience/enpro-logo.webp",
       start: "2021",
       end: "2023",
       details: [
@@ -174,7 +172,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Qt/QML C++ Developer",
-      logoUrl: "/work-experience/marenrobotics-logo.jpeg",
+      logoUrl: "/work-experience/marenrobotics-logo.webp",
       start: "2020",
       end: "2021",
       details: [
@@ -189,7 +187,7 @@ export const DATA = {
       school: "Izmir University of Economics",
       href: "https://www.ieu.edu.tr",
       degree: "Computer Engineering, BSc (Full Scholarship)",
-      logoUrl: "/education/ieu-logo.png",
+      logoUrl: "/education/ieu-logo.webp",
       start: "2013",
       end: "2018",
     },
@@ -227,7 +225,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/product/bkapi-site.jpeg",
+      image: "/product/bkapi-site.webp",
     },
     {
       title: "Lightweight Secure TCP",
@@ -262,7 +260,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/product/lightweight-secure-tcp.png",
+      image: "/product/lightweight-secure-tcp.webp",
     },
     {
       title: "bKapı -remote",
@@ -297,7 +295,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/product/bkapi-remote.jpeg",
+      image: "/product/bkapi-remote.webp",
     },
     {
       title: "bOkul",
@@ -363,7 +361,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/product/karsiligine.png",
+      image: "/product/karsiligine.webp",
     },
     {
       title: "binak.com.tr",
@@ -385,7 +383,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/product/binakcomtr.jpeg",
+      image: "/product/binakcomtr.webp",
     },
     {
       title: "kdvhesaplayici.com.tr",
@@ -407,7 +405,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/product/kdvhesaplayicicomtr.png",
+      image: "/product/kdvhesaplayicicomtr.webp",
     },
     {
       title: "Binak React Components",
@@ -435,7 +433,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/product/binak-react-components.png",
+      image: "/product/binak-react-components.webp",
     },
     {
       title: "React Image Displayer",
@@ -464,7 +462,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/product/react-image-displayer.png",
+      image: "/product/react-image-displayer.webp",
     },
     {
       title: "bKapı -site mobil & bKapı -multi",
@@ -641,7 +639,7 @@ export const DATA = {
         "3D Printing",
       ],
       links: [],
-      image: "/product/bresetleme.png",
+      image: "/product/bresetleme.webp",
     },
   ],
 
@@ -652,7 +650,7 @@ export const DATA = {
       publisher: "Kodlab Yayin Dagitim",
       description: "A published book that teaches Qt for beginners.",
       isbn: "978-6-05-211823-8",
-      image: "/publication/uygulamalar-ile-qt.jpg",
+      image: "/publication/uygulamalar-ile-qt.webp",
       links: [
         {
           title: "Official Publisher Page",
@@ -674,7 +672,7 @@ export const DATA = {
       description:
         "A paper on an M2M information system that was published in IEEE.",
       isbn: "978-1-7281-9136-2",
-      image: "/publication/2020-asyu.png",
+      image: "/publication/2020-asyu.webp",
       links: [
         {
           title: "View on IEEE Xplore",
