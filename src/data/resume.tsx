@@ -125,6 +125,23 @@ export const DATA = {
   },
   work: [
     {
+      company: "BINAK Software & Information Systems",
+      href: "https://binak.com.tr",
+      badges: [],
+      location: "Antalya, Turkey",
+      title: "Software Developer & Founder",
+      logoUrl: "/work-experience/binak-logo.png",
+      start: "2018",
+      end: "Present",
+      details: [
+        "Designed, built, and launched a diverse range of products from scratch as a solo developer, without hiring additional employees.",
+        "Created full-stack applications with React.js, Vue.js, Node.js, MySQL, MongoDB, and TypeScript, addressing diverse user needs.",
+        "Developed desktop and mobile apps using Qt/C++ with optimized performance and usability.",
+        "Designed and implemented embedded hardware solutions using Raspberry Pi, ESP boards, and custom-built parts created with 3D printing and CNC machining.",
+        "Managed all aspects of product development, including architecture, coding, testing, and deployment, ensuring high-quality results.",
+      ],
+    },
+    {
       company: "SPERO 3D",
       href: "spero3d.com",
       badges: [],
@@ -166,23 +183,6 @@ export const DATA = {
         "Redesigned the UI to meet specifications from the UI/UX designer, improving usability and aesthetics.",
       ],
     },
-    {
-      company: "BINAK Software & Information Systems",
-      href: "https://binak.com.tr",
-      badges: [],
-      location: "Antalya, Turkey",
-      title: "Software Developer & Founder",
-      logoUrl: "/work-experience/binak-logo.png",
-      start: "2018",
-      end: "Present",
-      details: [
-        "Designed, built, and launched a diverse range of products from scratch as a solo developer, without hiring additional employees.",
-        "Created full-stack applications with React.js, Vue.js, Node.js, MySQL, MongoDB, and TypeScript, addressing diverse user needs.",
-        "Developed desktop and mobile apps using Qt/C++ with optimized performance and usability.",
-        "Designed and implemented embedded hardware solutions using Raspberry Pi, ESP boards, and custom-built parts created with 3D printing and CNC machining.",
-        "Managed all aspects of product development, including architecture, coding, testing, and deployment, ensuring high-quality results.",
-      ],
-    },
   ],
   education: [
     {
@@ -213,8 +213,8 @@ export const DATA = {
         "Mobile and web app integration for enhanced accessibility.",
       ],
       technologies: [
-        "Qt",
-        "C++",
+        "Qt 5",
+        "C++17",
         "Raspberry Pi 4/5",
         "MySQL",
         "ESP01",
@@ -228,6 +228,41 @@ export const DATA = {
         },
       ],
       image: "/product/bkapi-site.jpeg",
+    },
+    {
+      title: "Lightweight Secure TCP",
+      href: "https://github.com/sDenizOzturk/lightweight-secure-tcp",
+      active: true,
+      description:
+        "A minimal, fast, and secure TCP communication library with encrypted messaging and no external dependencies.",
+      features: [
+        "Cross-platform support for ESP32, Linux, Windows, macOS, and Qt",
+        "No external dependencies, written in pure C++17",
+        "Easy integration with CMake and PlatformIO",
+        "Encrypted handshake and messaging",
+        "Event-driven architecture with callback-based notifications",
+        "Keep-alive and graceful disconnect mechanisms",
+        "Randomized padding to prevent key recovery attacks",
+      ],
+      technologies: ["C++17", "Standard Library", "Raw TCP", "CMake", "ESP32"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/sDenizOzturk/lightweight-secure-tcp",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Documentation",
+          href: "https://sdenizozturk.github.io/lightweight-secure-tcp/docs/introduction",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Presentation PDF",
+          href: "https://github.com/sDenizOzturk/lightweight-secure-tcp/blob/main/assets/LightweightSecureTCP-presentation.pdf",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/lightweight-secure-tcp.png",
     },
     {
       title: "bKapı -remote",
@@ -443,8 +478,8 @@ export const DATA = {
         "Published on Google Play Store and Apple App Store.",
       ],
       technologies: [
-        "Qt",
-        "C++",
+        "Qt 6",
+        "C++17",
         "GStreamer",
         "Google Play Console",
         "App Store Connect",
@@ -485,7 +520,7 @@ export const DATA = {
         "Extensive call and access log management.",
       ],
       technologies: [
-        "C++",
+        "C++11",
         "ESP32",
         "SIM800/SIM808",
         "ESPAsyncWebServer",
@@ -519,7 +554,7 @@ export const DATA = {
         "Wireless sensor communication and user-configurable settings.",
       ],
       technologies: [
-        "C++",
+        "C++11",
         "ESP32",
         "SPIFFS",
         "ESPAsyncWebServer",
@@ -548,8 +583,8 @@ export const DATA = {
         "Customizable reporting and payroll integration.",
       ],
       technologies: [
-        "Qt",
-        "C++",
+        "Qt 5",
+        "C++11",
         "Python",
         "Raspberry Pi",
         "MySQL",
@@ -576,7 +611,7 @@ export const DATA = {
         "Support for parsing and generating various document formats.",
         "AES 256 encryption for secure data storage.",
       ],
-      technologies: ["Qt", "C++", "SQLITE"],
+      technologies: ["Qt 5", "C++11", "SQLITE"],
       links: [
         {
           type: "Product Pages",
@@ -597,7 +632,7 @@ export const DATA = {
         "Can be configured via UI interface by connecting to the device in Access Point mode.",
       ],
       technologies: [
-        "C++",
+        "C++11",
         "ESP32",
         "SPIFFS",
         "ESPAsyncWebServer",

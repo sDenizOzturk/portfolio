@@ -38,7 +38,10 @@ export default function Page() {
     return DATA.projects.filter((project) => {
       return (
         Array.isArray(project.technologies) &&
-        project.technologies.includes(projectFilter)
+        project.technologies.some(
+          (tech) =>
+            tech === projectFilter || tech.startsWith(`${projectFilter}`)
+        )
       );
     });
   }, [projectFilter]);
