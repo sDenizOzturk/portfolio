@@ -228,6 +228,48 @@ export const DATA = {
       image: "/product/bkapi-site.webp",
     },
     {
+      title: "Pixstore",
+      href: "https://github.com/sDenizOzturk/pixstore",
+      active: true,
+      description:
+        "Vanilla TypeScript, full-stack image storage and caching library with end-to-end encryption.",
+      features: [
+        "Transparent IndexedDB cache with token-based invalidation and eviction.",
+        "All images are AES-GCM encrypted, with a unique key per image. Keys never leave the backend by default.",
+        "Efficient, protocol-agnostic binary wire format for image transfer.",
+        "All access is protected by a stateless, time-based proof and per-image tokens.",
+        "Uses SQLite for fast, reliable metadata storage and cache.",
+      ],
+      technologies: [
+        "TypeScript",
+        "Node.js",
+        "AES-GCM",
+        "IndexedDB",
+        "SQLite",
+        "Docusaurus",
+        "Jest",
+        "Semantic Release",
+      ],
+      links: [
+        {
+          type: "GitHub Repo",
+          href: "https://github.com/sDenizOzturk/pixstore",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Documentation",
+          href: "https://sdenizozturk.github.io/pixstore/docs/introduction",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Presentation PDF",
+          href: "https://github.com/sDenizOzturk/pixstore/blob/main/assets/pixstore-presentation.pdf",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/product/pixstore.webp",
+    },
+    {
       title: "Lightweight Secure TCP",
       href: "https://github.com/sDenizOzturk/lightweight-secure-tcp",
       active: true,
@@ -245,7 +287,7 @@ export const DATA = {
       technologies: ["C++17", "Standard Library", "Raw TCP", "CMake", "ESP32"],
       links: [
         {
-          type: "GitHub",
+          type: "GitHub Repo",
           href: "https://github.com/sDenizOzturk/lightweight-secure-tcp",
           icon: <Icons.github className="size-3" />,
         },
